@@ -2,18 +2,9 @@
 
 namespace lo\modules\elfinder\controllers;
 
-class PathController extends \mihaildev\elfinder\Controller
+class PathController extends \mihaildev\elfinder\PathController
 {
-    public $access = ['administrate'];
     public $disabledCommands = ['netmount'];
-    public $roots = [
-        [
-            'baseUrl' => '@web/upload/files',
-            'basePath' => '@webroot/upload/files/',
-            'path' => '',
-            'name' => 'Global',
-        ],
-    ];
 
     public $connectOptions = [
         'bind' => [
@@ -57,15 +48,12 @@ class PathController extends \mihaildev\elfinder\Controller
 
     public function beforeAction($action)
     {
-
         \Yii::$app->controller->enableCsrfValidation = false;
-
-
         return parent::beforeAction($action);
     }
 
     public function actionManager()
     {
-        return $this->renderAjax('manager', ['options' => $this->getManagerOptions()]);
+        return $this->renderAjax('/path/manager', ['options' => $this->getManagerOptions()]);
     }
 }
