@@ -1,0 +1,14 @@
+{
+    "name": "loveorigami/lo-module-elfinder",
+    "description": "ElFinder media gallery for use in CKEditor and TinyMCE",
+    "type": "yii2-extension",
+    "minimum-stability": "dev",
+    "require": {
+        "mihaildev/yii2-elfinder": "~1.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "lo\\modules\\elfinder\\": "/"
+        }
+    }
+}
