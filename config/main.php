@@ -39,7 +39,11 @@ return [
                             'imgLib' => 'gd'
                         ]
                     ],
-                ]
+                ],
+
+                'file-manager' => [
+                    'class' => 'lo\modules\elfinder\controllers\FileManagerController',
+                ],
             ],
         ],
     ],
