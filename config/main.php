@@ -13,6 +13,7 @@ return [
                     'root' => [
                         'baseUrl' => '', // /uploads
                         'basePath' => '@storage', // site.lo/uploads
+                        'path'=>'',
                         'access' => ['read' => '*', 'write' => 'root'],
                         'name' => ['category' => 'backend', 'message' => 'Category'],
                         'driver' => 'LocalFileSystem',
@@ -30,6 +31,7 @@ return [
                     'root' => [
                         'baseUrl' => '@storageUrl', // /uploads
                         'basePath' => '@storage', // site.lo/uploads
+                        'path'=>'',
                         'access' => ['read' => '*', 'write' => 'root'],
                         'name' => ['category' => 'backend', 'message' => 'Category'],
                         'driver' => 'LocalFileSystem',
