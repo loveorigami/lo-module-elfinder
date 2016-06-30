@@ -8,7 +8,7 @@ return [
             'defaultRoute' => 'elfinder/path/index',
             'controllerMap' => [
                 'path' => [
-                    'class' => 'lo\modules\elfinder\controllers\PathController',
+                    'class' => lo\modules\elfinder\controllers\PathController::class,
                     'access' => ['admin'],
                     'root' => [
                         'baseUrl' => '', // /uploads
@@ -25,7 +25,7 @@ return [
                 ],
 
                 'editor' => [
-                    'class' => 'lo\modules\elfinder\controllers\PathController',
+                    'class' => lo\modules\elfinder\controllers\PathController::class,
                     'access' => ['admin'],
                     'root' => [
                         'baseUrl' => '@storageUrl', // /uploads
@@ -42,7 +42,7 @@ return [
                 ],
 
                 'file-manager' => [
-                    'class' => 'lo\modules\elfinder\controllers\FileManagerController',
+                    'class' => lo\modules\elfinder\controllers\FileManagerController::class,
                 ],
             ],
         ],
