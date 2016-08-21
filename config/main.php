@@ -12,7 +12,7 @@ return [
                     'access' => ['admin'],
                     'root' => [
                         'baseUrl' => '', // /uploads
-                        'basePath' => '@storage', // site.lo/uploads
+                        'basePath' => '@storagePath', // site.lo/uploads
                         'path'=>'',
                         'access' => ['read' => '*', 'write' => 'root'],
                         'name' => ['category' => 'backend', 'message' => 'Category'],
@@ -30,7 +30,7 @@ return [
                     'access' => ['admin'],
                     'root' => [
                         'baseUrl' => '@storageUrl', // /uploads
-                        'basePath' => '@storage', // site.lo/uploads
+                        'basePath' => '@storagePath', // site.lo/uploads
                         'path'=>'',
                         'access' => ['read' => '*', 'write' => 'root'],
                         'name' => ['category' => 'backend', 'message' => 'Category'],

@@ -2,7 +2,9 @@
 
 namespace lo\modules\elfinder\controllers;
 
-class PathController extends \mihaildev\elfinder\PathController
+use mihaildev\elfinder\PathController as PController;
+
+class PathController extends PController
 {
     public $disabledCommands = ['netmount'];
 

@@ -1,8 +1,8 @@
 <?php
 
 namespace lo\modules\elfinder\controllers;
-use yii\web\Controller;
 
+use yii\web\Controller;
 
 class FrameController extends Controller
 {

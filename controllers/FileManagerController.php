@@ -2,7 +2,9 @@
 
 namespace lo\modules\elfinder\controllers;
 
-class FileManagerController extends \yii\web\Controller
+use yii\web\Controller;
+
+class FileManagerController extends Controller
 {
     public function actionIndex()
     {
