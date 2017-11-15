@@ -8,7 +8,7 @@
     },
     "autoload": {
         "psr-4": {
-            "lo\\modules\\elfinder\\": "/"
+            "lo\\modules\\elfinder\\": "src/"
         }
     }
 }
