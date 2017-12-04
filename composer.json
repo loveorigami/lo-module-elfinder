@@ -4,7 +4,7 @@
     "type": "yii2-extension",
     "minimum-stability": "dev",
     "require": {
-        "mihaildev/yii2-elfinder": "~1.1.0"
+        "mihaildev/yii2-elfinder": "*"
     },
     "autoload": {
         "psr-4": {
