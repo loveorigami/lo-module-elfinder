@@ -9,7 +9,7 @@ return [
             'controllerMap' => [
                 'path' => [
                     'class' => lo\modules\elfinder\controllers\PathController::class,
-                    'access' => ['admin'],
+                    'access' => ['root'],
                     'root' => [
                         'baseUrl' => '', // /uploads
                         'basePath' => '@storagePath', // site.lo/uploads
@@ -45,7 +45,7 @@ return [
 
                 'editor' => [
                     'class' => lo\modules\elfinder\controllers\PathController::class,
-                    'access' => ['admin'],
+                    'access' => ['root'],
                     'root' => [
                         'baseUrl' => '@storageUrl', // /uploads
                         'basePath' => '@storagePath', // site.lo/uploads
