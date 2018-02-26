@@ -50,7 +50,7 @@ return [
                         'baseUrl' => '@storageUrl', // /uploads
                         'basePath' => '@storagePath', // site.lo/uploads
                         'path'=>'',
-                        'access' => ['read' => '*', 'write' => 'root'],
+                        //'access' => ['read' => '*', 'write' => 'root'],
                         'name' => ['category' => 'backend', 'message' => 'Category'],
                         'driver' => 'LocalFileSystem',
                         'options' => [
