@@ -10,5 +10,12 @@
         "psr-4": {
             "lo\\modules\\elfinder\\": "src/"
         }
-    }
+    },
+	"extra": {
+		"config-plugin": {
+		    "admin": [
+				"src/config/main.php"
+			]
+		}
+	}
 }
