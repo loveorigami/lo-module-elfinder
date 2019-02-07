@@ -25,24 +25,6 @@ return [
                     ],
                 ],
 
-                'sxd' => [
-                    'class' => lo\modules\elfinder\controllers\PathController::class,
-                    'access' => ['root'],
-                    'root' => [
-                        'baseUrl' => '', // /uploads
-                        'basePath' => '@sxd', // site.lo/uploads
-                        'path'=>'',
-                        'access' => ['read' => '*', 'write' => 'root'],
-                        'name' => ['category' => 'backend', 'message' => 'Category'],
-                        'driver' => 'LocalFileSystem',
-                        'options' => [
-                            'tmbSize' => '48',
-                            'acceptedName' => '/^[0-9a-z_\-.]+$/i', // i любой регистр только англ
-                            'imgLib' => 'gd'
-                        ]
-                    ],
-                ],
-
                 'editor' => [
                     'class' => lo\modules\elfinder\controllers\PathController::class,
                     'access' => ['root'],
